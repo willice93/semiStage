@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
+
+body{
+/*	overflow-y:hidden;
+ min-height: 100vh;
+ background: url(bg.jpg)no-repeat;
+ background-size: cover;
+ background-position: center;*/
+}
+.white{
+  color: white;
+}
+.fas {
+    padding: 0 5px;
+}
+.color-att{
+color: #ffc107;
+}
+.color-cour{
+color: #20c997;
+}
+.color-term{
+color:#0d6efd;
+}
+.color-annl{
+color:#dc3545;
+}
+.side-bar{
+ background: black;
+z-index: 9999999;
+ width: 290px;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: 100%;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: right;
+}
+
+.side-bar.active{
+ left: 0;
+}
+
+.side-bar .menu{
+ width: 100%;
+ margin-top: 80px;
+}
+
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 60px;
+}
+.side-bar .menu .item a .active{
+    background: #27ad27;
+}
+
+.side-bar .menu .item a:hover{
+ background: #27ad27;
+ transition: 0.3s ease;
+}
+.side-bar .menu .item .active{
+    background: #27ad27;
+}
+
+.side-bar .menu .item i{
+ margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: rgba(255, 255, 255, 0.1);
+ display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+ padding-left: 80px;
+}
+
+.rotate{
+ transform: rotate(90deg);
+}
+
+.close-btn{
+ position: absolute;
+ color: #fff;
+ font-size: 20px;
+ right: 0;
+ margin: 25px;
+ cursor: pointer;
+}
+
+.menu-btn{
+ position: absolute;
+ color:#27ad27;
+ font-size: 30px;
+ margin: 25px;
+ top: 0;
+ cursor: pointer;
+}
+
+.main{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+}
+.elem_center{
+  display: flex !important;
+  justify-content: center!important;
+}
+.main h1{
+ color: black;
+ font-size: 60px;
+ text-align: center;
+ line-height: 80px;
+}
+
+@media (max-width: 900px){
+ .main h1{
+   font-size: 40px;
+   line-height: 60px;
+ }
+}
+
+/* liste des projets*/
+h1.title1 { 
+	font-size: 1.7em;
+	 }
+h2.title2 { 
+	font-size: 2em;
+	text-align: center;
+	 }
+.btn-ouf-tas_color {
+    border: 2px solid #27ad27;
+    float: right;
+}
+.btn-ouf-tas_color a {
+    color: #27ad27 !important;
+}   
+.bg-bleu{
+      background-color: #00a1ffb8;
+    padding: 5px 25px;
+    margin: 0 5%;
+    width: 325px;
+    border-radius: 10px;
+}
+.bg-red{
+      background-color: #ff4b4b;
+    padding: 5px 25px;
+    margin: 0 5%;
+    width: 350px;
+    border-radius: 10px;
+}
+.bg-orang{
+      background-color: #ffbc00d4;
+      padding: 5px 25px;
+      margin: 0 5%;
+      width: 350px;
+      border-radius: 10px;
+}
+.inline{
+  display: flex;
+  flex-wrap: nowrap;
+}
